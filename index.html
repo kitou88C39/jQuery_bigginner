@@ -16,10 +16,14 @@
     <div class="test-class">Hello world</div>
     <div class="test-id">Hello world</div>
     <p>Test</p>
-    <!-- ②scriptの間で、$を書いて呼び出す -->
+    <input type="button" value="登録" />
+
     <script>
+      // ②scriptの間で、$を書いて呼び出す
       $('div').css('background-color', 'red');
       console.log($('div').css('background-color'));
+      //   ③DOMの中身を更新する
+      $('input[tyep="button"]').val('submit');
     </script>
   </body>
 </html>
