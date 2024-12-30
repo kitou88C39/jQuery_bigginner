@@ -49,8 +49,10 @@
       });
       //⑦ビルドイン関数
       $('input[type="button"]').dblclick(function () {
-        $('p').fadeOut(500);
-        $('input[type="button"]').val('表示');
+        if ($('input[type="button"]').val() === '表示') {
+          $('p').fadeOut(500);
+          $('input[type="button"]').val('表示');
+        }
       });
     </script>
   </body>
