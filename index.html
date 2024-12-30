@@ -23,7 +23,7 @@
     <div class="test-id">Hello world</div>
     <div>Test</div>
     <div>Test</div>
-    <div>Test</div>
+    <div class="test-child">Test</div>
 
     <input type="button" value="登録" />
 
@@ -37,6 +37,7 @@
       $('p').addClass('test-class');
       //⑤DOMのスタイルを更新する
       $('#test-id').children().text('Hoge');
+      $('#test-id').parent().css('background-color', 'green');
     </script>
   </body>
 </html>
