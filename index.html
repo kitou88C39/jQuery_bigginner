@@ -57,13 +57,11 @@
           $('input[type="button"]').val('非表示');
         }
       });
+      //⑧fadeTggle関数
+      <p>Test</p>
+      <input type="button" value="非表示">
+      $(document).ready(function().on('click',function() { $('p').fadeToggle(500);
+      $(this).val($(this).val() === '表示'? '非表示': '表示'); }); });
     </script>
-    <!-- ⑧fadeTggle関数 -->
-    <p>Test</p>
-    <input type="button" value="非表示" />
-    $('input[type="button"]').dblclick(function () { $('p').fadeToggle(500,
-    function() { if ($('p').is(':visible')) {
-    $('input[type="button"]').val('非表示'); } else {
-    $('input[type="button"]').val('表示'); } }); });
   </body>
 </html>
