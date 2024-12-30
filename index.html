@@ -61,5 +61,9 @@
     <!-- ⑧fadeTggle関数 -->
     <p>Test</p>
     <input type="button" value="非表示" />
+    $('input[type="button"]').dblclick(function () { $('p').fadeToggle(500,
+    function() { if ($('p').is(':visible')) {
+    $('input[type="button"]').val('非表示'); } else {
+    $('input[type="button"]').val('表示'); } }); });
   </body>
 </html>
