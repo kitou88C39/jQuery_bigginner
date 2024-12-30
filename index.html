@@ -24,8 +24,10 @@
     <div>Test</div>
     <div>Test</div>
     <div class="test-child">Test</div>
-
     <input type="button" value="登録" />
+    <!-- ⑦ビルドイン関数 -->
+    <p>Test</p>
+    <input type="button" value="非表示" />
 
     <script>
       //②scriptの間で、$を書いて呼び出す
@@ -44,6 +46,11 @@
       });
       $('input[type="button"]').dblclick(function () {
         $('*').css('background-color', '#FFF').css('color', '#000');
+      });
+      //⑦ビルドイン関数
+      $('input[type="button"]').dblclick(function () {
+        $('p').fadeOut(500);
+        $('input[type="button"]').val('表示');
       });
     </script>
   </body>
