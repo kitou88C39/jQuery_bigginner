@@ -38,6 +38,10 @@
       //⑤DOMのスタイルを更新する
       $('#test-id').children().text('Hoge');
       $('#test-id').parent().css('background-color', 'green');
+      //⑥イベントの管理
+      $('input[type="button"]').click(function () {
+        $('*').css('background-color', '#225').css('color', '#ddf');
+      });
     </script>
   </body>
 </html>
